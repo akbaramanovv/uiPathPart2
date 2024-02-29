@@ -1,0 +1,495 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1047.2,5652.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1057.6,5588" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="isChooseButtonDisable" />
+      <Variable x:TypeArguments="x:String" Name="voens" />
+      <Variable x:TypeArguments="s:String[]" Name="voenList" />
+      <Variable x:TypeArguments="x:String" Name="eee" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_voens" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadTextFile File="{x:Null}" DisplayName="Read Text File" FileName="C:\\Users\\Akbar\\Documents\\Voens.txt" sap:VirtualizedContainerService.HintSize="995.2,120.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_2">
+      <ui:ReadTextFile.Content>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">voens</CSharpReference>
+        </OutArgument>
+      </ui:ReadTextFile.Content>
+    </ui:ReadTextFile>
+    <ui:GenerateDataTable ColumnSizes="{x:Null}" Positions="{x:Null}" AutoDetectTypes="False" CSVParsing="False" ColumnSeparators="&#xA;" DisplayName="Generate Data Table From Text" sap:VirtualizedContainerService.HintSize="995.2,243.2" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="Voen&#xD;&#xA;1005819031&#xD;&#xA;3400101701&#xD;&#xA;1600357781&#xD;&#xA;1300630481&#xD;&#xA;8600213091&#xD;&#xA;1300256941&#xD;&#xA;3200005751&#xD;&#xA;5500753702&#xD;&#xA;1307816291&#xD;&#xA;1700170891&#xD;&#xA;1000234331&#xD;&#xA;1001007011&#xD;&#xA;1400183601&#xD;&#xA;1403643991&#xD;&#xA;8600008421&#xD;&#xA;7800017681&#xD;&#xA;2100146311&#xD;&#xA;1000506131&#xD;&#xA;6900017651&#xD;&#xA;1000309671&#xD;&#xA;1305515021&#xD;&#xA;1700432341&#xD;&#xA;4200166171&#xD;&#xA;2300161611&#xD;&#xA;1500594851&#xD;&#xA;1004189251&#xD;&#xA;200746511&#xD;&#xA;1300089091&#xD;&#xA;1402153341&#xD;&#xA;3101932691&#xD;&#xA;1600333771&#xD;&#xA;1302445441&#xD;&#xA;1400305341&#xD;&#xA;1500550381&#xD;&#xA;7300036741&#xD;&#xA;200009161&#xD;&#xA;2200346081&#xD;&#xA;2701510871&#xD;&#xA;1406255801&#xD;&#xA;1308079062&#xD;&#xA;1501960111&#xD;&#xA;1503426841&#xD;&#xA;2300385811&#xD;&#xA;3600126801&#xD;&#xA;2701866661&#xD;&#xA;1300565891&#xD;&#xA;200122341&#xD;&#xA;4400418371&#xD;&#xA;1504595531&#xD;&#xA;2303373391&#xD;&#xA;1000092541&#xD;&#xA;4500163851&#xD;&#xA;2903911661&#xD;&#xA;300011171&#xD;&#xA;1305128611&#xD;&#xA;200005051&#xD;&#xA;2904611941&#xD;&#xA;1801522491&#xD;&#xA;7400011001&#xD;&#xA;1307115061&#xD;&#xA;1400139811&#xD;&#xA;1500264111&#xD;&#xA;1800129351&#xD;&#xA;200690411&#xD;&#xA;1300377521&#xD;&#xA;1008190221&#xD;&#xA;2000285592&#xD;&#xA;3601582832&#xD;&#xA;8100945331&#xD;&#xA;2600101531&#xD;&#xA;5000039931&#xD;&#xA;3400050071&#xD;&#xA;5100547191&#xD;&#xA;2304605622&#xD;&#xA;6000157511&#xD;&#xA;1200176811&#xD;&#xA;1200085401&#xD;&#xA;1700308151&#xD;&#xA;1307880821&#xD;&#xA;1505702511&#xD;&#xA;1400409061&#xD;&#xA;4300015071&#xD;&#xA;1300200131&#xD;&#xA;2700112961&#xD;&#xA;1700169961&#xD;&#xA;6400126081&#xD;&#xA;6500011491&#xD;&#xA;1500097771&#xD;&#xA;200031061&#xD;&#xA;200282061&#xD;&#xA;1700247421&#xD;&#xA;2004071781&#xD;&#xA;2100995331&#xD;&#xA;4400713421&#xD;&#xA;200015271&#xD;&#xA;2003781971&#xD;&#xA;4502786701&#xD;&#xA;1302904021&#xD;&#xA;7800002431&#xD;&#xA;7500120611&#xD;&#xA;1405226241&#xD;&#xA;8500059911&#xD;&#xA;1402681331&#xD;&#xA;1305438221&#xD;&#xA;6200481481&#xD;&#xA;1700043791&#xD;&#xA;9900022851&#xD;&#xA;1401207371&#xD;&#xA;1702291071&#xD;&#xA;3000181241&#xD;&#xA;2001208721&#xD;&#xA;1401366601&#xD;&#xA;1300331751&#xD;&#xA;1502846911&#xD;&#xA;6000827271&#xD;&#xA;1401733781&#xD;&#xA;6501211891&#xD;&#xA;1701934661&#xD;&#xA;8500209801&#xD;&#xA;2006670061&#xD;&#xA;2007644391&#xD;&#xA;2600235651&#xD;&#xA;1700332601&#xD;&#xA;1004058321&#xD;&#xA;1405316041&#xD;&#xA;1806251171&#xD;&#xA;1505642551&#xD;&#xA;3100191211&#xD;&#xA;1701723611&#xD;&#xA;1702176871&#xD;&#xA;1100099571&#xD;&#xA;3700037801&#xD;&#xA;1404196901&#xD;&#xA;1701563631&#xD;&#xA;1200176661&#xD;&#xA;1305685371&#xD;&#xA;1307742691&#xD;&#xA;1800137041&#xD;&#xA;1701846981&#xD;&#xA;4003102561&#xD;&#xA;1001473201&#xD;&#xA;1308021921&#xD;&#xA;1306183471&#xD;&#xA;1307019561&#xD;&#xA;2905898141&#xD;&#xA;1005183231&#xD;&#xA;2905910061&#xD;&#xA;1900958761&#xD;&#xA;9900056131&#xD;&#xA;7500197961&#xD;&#xA;201422351&#xD;&#xA;1601737241&#xD;&#xA;2905022181&#xD;&#xA;1701434951&#xD;&#xA;1404717391&#xD;&#xA;1506254611&#xD;&#xA;1500404581&#xD;&#xA;3000146061&#xD;&#xA;1500150281&#xD;&#xA;4500224861&#xD;&#xA;1503242161&#xD;&#xA;201419971&#xD;&#xA;2305785321&#xD;&#xA;1400151341&#xD;&#xA;600006291&#xD;&#xA;200265072&#xD;&#xA;4000395411&#xD;&#xA;2900350161&#xD;&#xA;1200104751&#xD;&#xA;200034811&#xD;&#xA;2100269271&#xD;&#xA;2900436661&#xD;&#xA;1305260471&#xD;&#xA;1400617761&#xD;&#xA;1702429841&#xD;&#xA;2000025721&#xD;&#xA;9900047091&#xD;&#xA;1300050781&#xD;&#xA;1802077241&#xD;&#xA;1405196831&#xD;&#xA;1700164931&#xD;&#xA;2100094601&#xD;&#xA;1502467481&#xD;&#xA;1300144711&#xD;&#xA;1701008561&#xD;&#xA;8500188291&#xD;&#xA;1401780071&#xD;&#xA;3001428721&#xD;&#xA;1300430721&#xD;&#xA;1700357381&#xD;&#xA;1300959901&#xD;&#xA;1401861671&#xD;&#xA;5100030091&#xD;&#xA;1701243801&#xD;&#xA;1500968811&#xD;&#xA;9900006371&#xD;&#xA;201170731&#xD;&#xA;2900382551&#xD;&#xA;1700012751&#xD;&#xA;1400332551&#xD;&#xA;1500376341&#xD;&#xA;2100562051&#xD;&#xA;1300189411&#xD;&#xA;2907148921&#xD;&#xA;200094231&#xD;&#xA;7700628711&#xD;&#xA;200534651&#xD;&#xA;1400122681&#xD;&#xA;6000130311&#xD;&#xA;3400140021&#xD;&#xA;1505600071&#xD;&#xA;1700354471&#xD;&#xA;3600086201&#xD;&#xA;8400086421&#xD;&#xA;5400789891&#xD;&#xA;1200068821&#xD;&#xA;3700071631&#xD;&#xA;4300061821&#xD;&#xA;1005616061&#xD;&#xA;1500374911&#xD;&#xA;1700069791&#xD;&#xA;9900023491&#xD;&#xA;1506055751&#xD;&#xA;5500074881&#xD;&#xA;200216121&#xD;&#xA;9900048311&#xD;&#xA;1100496071&#xD;&#xA;1502670591&#xD;&#xA;2005065061&#xD;&#xA;6700130941&#xD;&#xA;1401546461&#xD;&#xA;300234991&#xD;&#xA;1700235621&#xD;&#xA;1300348991&#xD;&#xA;2300357791&#xD;&#xA;1600515921&#xD;&#xA;1700097811&#xD;&#xA;1403629801&#xD;&#xA;1405835961&#xD;&#xA;7400068321&#xD;&#xA;1401534791&#xD;&#xA;2004321841&#xD;&#xA;5000079731&#xD;&#xA;1700266121&#xD;&#xA;1504871601&#xD;&#xA;1700246911&#xD;&#xA;1701183971&#xD;&#xA;200017821&#xD;&#xA;200460081&#xD;&#xA;1402272621&#xD;&#xA;2900378021&#xD;&#xA;1401783541&#xD;&#xA;7600038891&#xD;&#xA;9900083341&#xD;&#xA;1703060461&#xD;&#xA;1301531871&#xD;&#xA;1403860351&#xD;&#xA;2900037221&#xD;&#xA;1300199501&#xD;&#xA;2006637431&#xD;&#xA;1702428921&#xD;&#xA;1000469951&#xD;&#xA;1301421891&#xD;&#xA;1702766401&#xD;&#xA;1301620621&#xD;&#xA;7200099061&#xD;&#xA;1300087531&#xD;&#xA;2000217661&#xD;&#xA;1400090181&#xD;&#xA;1700261221&#xD;&#xA;1403872281&#xD;&#xA;6200068521&#xD;&#xA;200374541&#xD;&#xA;1700272511&#xD;&#xA;9900008641&#xD;&#xA;1003676291&#xD;&#xA;1500046011&#xD;&#xA;1700129061&#xD;&#xA;1300345001&#xD;&#xA;1300039761&#xD;&#xA;1401122631&#xD;&#xA;1303082441&#xD;&#xA;1300315421&#xD;&#xA;7900013731&#xD;&#xA;2700208321&#xD;&#xA;1202366491&#xD;&#xA;2101312872&#xD;&#xA;1500226281&#xD;&#xA;1700007431&#xD;&#xA;1304345301&#xD;&#xA;1300498771&#xD;&#xA;4400725501&#xD;&#xA;2300123092&#xD;&#xA;1004220711&#xD;&#xA;1700048151&#xD;&#xA;1601874021&#xD;&#xA;1405217221&#xD;&#xA;2000956291&#xD;&#xA;8600004311&#xD;&#xA;1400032621&#xD;&#xA;1402801511&#xD;&#xA;1400151881&#xD;&#xA;2201548211&#xD;&#xA;3400206621&#xD;&#xA;1302396101&#xD;&#xA;1301779391&#xD;&#xA;6200476311&#xD;&#xA;9900082961&#xD;&#xA;1802297051&#xD;&#xA;200016061&#xD;&#xA;1904389551&#xD;&#xA;1700015381&#xD;&#xA;1303074751&#xD;&#xA;1500163971&#xD;&#xA;2304019381&#xD;&#xA;4400024941&#xD;&#xA;1500171121&#xD;&#xA;1500125471&#xD;&#xA;700011511&#xD;&#xA;1701090441&#xD;&#xA;1700219551&#xD;&#xA;1800134411&#xD;&#xA;1503324551&#xD;&#xA;1304461521&#xD;&#xA;6200019961&#xD;&#xA;1001221131&#xD;&#xA;5000200281&#xD;&#xA;1404055321&#xD;&#xA;2600029891&#xD;&#xA;200465671&#xD;&#xA;1500855511&#xD;&#xA;7600062111&#xD;&#xA;3700333471&#xD;&#xA;2007031941&#xD;&#xA;1300295951&#xD;&#xA;2301129701&#xD;&#xA;1400488431&#xD;&#xA;1403586551&#xD;&#xA;7300145781&#xD;&#xA;3300028291&#xD;&#xA;5800007771&#xD;&#xA;1703585381&#xD;&#xA;1700332731&#xD;&#xA;1702859241&#xD;&#xA;1502122311&#xD;&#xA;7200013101&#xD;&#xA;1400605141&#xD;&#xA;6700010871&#xD;&#xA;1700531291&#xD;&#xA;200539551&#xD;&#xA;200422011&#xD;&#xA;1500356721&#xD;&#xA;1700531161&#xD;&#xA;1300118421&#xD;&#xA;1500109681&#xD;&#xA;300071711&#xD;&#xA;1503236181&#xD;&#xA;1000193481&#xD;&#xA;2900538261&#xD;&#xA;1405000611&#xD;&#xA;1401375061&#xD;&#xA;1300621871&#xD;&#xA;1400500631&#xD;&#xA;2005502291&#xD;&#xA;1300203731&#xD;&#xA;2304775431&#xD;&#xA;1901371281&#xD;&#xA;6100027101&#xD;&#xA;1905064061&#xD;&#xA;1403432791&#xD;&#xA;1100107241&#xD;&#xA;2700603111&#xD;&#xA;1701130761" NewLineSeparator="&#xA;" UseColumnHeader="True">
+      <ui:GenerateDataTable.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">dt_voens</CSharpReference>
+        </OutArgument>
+      </ui:GenerateDataTable.DataTable>
+    </ui:GenerateDataTable>
+    <Sequence DisplayName="works on chrome" sap:VirtualizedContainerService.HintSize="995.2,5135.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Müqavilənin illik qoşmasına əlavənin hazırlanması" sap:VirtualizedContainerService.HintSize="932.8,5023.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="899.2,4783.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="836.8,4695.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="voen" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="803.2,4504.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="740.8,4418.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                        <TryCatch.Try>
+                          <Sequence DisplayName="click operations" sap:VirtualizedContainerService.HintSize="704,4164" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="ui:UiElement" Name="isError" />
+                              <Variable x:TypeArguments="x:Boolean" Name="voenNotFound" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="641.6,122.4" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="641.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="1243, 567, 76, 42" CvTextArea="1259, 580, 43, 18" CvType="Button" DesignTimeRectangle="1245, 569, 73, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Bağla' parentid='attention' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bağla' parentid='attention' tag='BUTTON' type='button' class='btn btn-sm bg-danger-800 closeModal' check:innerText='Bağla' /&gt;" Guid="e2a870a2-6079-4175-8677-93538690036e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAArCAYAAAA9pAX3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAN9SURBVGhD7ZpLSyNBEMf343j3C3gUPHgSD7mIiCKCiIgognhXBJ8ognhQRBR8ICqIoiDK6upKdpOYxIgxcROTmJd5v2q3CmowcZJNa9yN0n/4Q9JdPeP8Ul3VwnwBKWFJaK+QAi1sMsEPjQaOKyqkc4xckA9LgSaBFTbyYSnQ1AKls82S0ATMktAEzJLQBMyS0ATMktAEzJLQBMyS0ATMktAEzJLQBMyS0ATMktAEzCoptLuxMQhfXb3w4+4u6JuaVNcUsmdnB/wnJ/C1shK+19TQtRwLC8r8w/IyxJ1O0DU0ZK17L7NKCg0fIhkIgGdrC1zr62T8HHc4IPH4CKbOTtV1+axvboaY3Q7pSATS0SiEDAaCx/OfBpraQ5i6uiDp94NzaSlrvBhjlhnb28HQ0vJi7lND0zU2Qtzlonkeu+7rgyetFhIeDwROT8HS3w+BszOwDAwUHZN7PwT8a24OolYrZbdrbQ1sk5PgPz4GbV2dct3XmvXu0L5VVVFNS3q9BAHHbOPjtN3CRiM45ufBd3hIYFKhED0kxtinpv4ak3s/39ERpGMxisU1uBbXlCobWSWHpqbU0xPYp6cpBrMhbDZDSK+nz7wWa186HicgF9XVELm5eRHjXFwkkGrQzL29VE8xhuOx/kVvb8sfWu4fiLXIs71N4DDDDK2t9Otj7PO1t4OD9NAIxNjRQTUwNwYzNenzqUK7n52l9ebu7qw13r29jwcNrWSXTkdNIRUMFgSSDxoCwW2uBg2bDP4wudBcq6sfExoagWGN+anRUJH2HhxkzWOm4NECgfD2DF5eFr0970ZHKdOsw8NKPDp4cfHxoGEjwCxAIA8rKzTm3d+nbLsbGaHvV21tBJJrGo5RI/izJnh+TlvXvblJMfkagba+HmI2G0QsFuUgfT8zQ9coe2gvlMnQtnFvbChZgwUajwGZVIpCsONxh2UgaOvQEGUcAsamYJuYyLs98TtuTTxu4D1RCbebMrqsoYkaIeJ2VZtTc25Ny2f8US5ra1Xn3mLWf4VWyLjdzD09WWOYrdgssJk8H/9XZpUtNDz1IyDc2pHrazqmZBIJ6oZq8f/CrLKFhsYmgkcRrF3YGErxr9BbzCpraOVmloQmYJaEJmCWhCZgloQmYJaEJmCWhCZgloQmYJYCTb5zW9iq79zKt7vzG7movt0tVbwkNGEB/AZTnuo0IcraxwAAAABJRU5ErkJggg==" InformativeScreenshot="aef6ef29fa3c8fc0189b9fcb1384d12e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.CvTextArgument>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">Bagla</Literal>
+                                    </InArgument>
+                                  </uix:TargetAnchorable.CvTextArgument>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'İşəgötürənin VÖEN-i'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="641.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="297, 449, 317, 49" CvType="InputBox" DesignTimeRectangle="300, 451, 312, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="a6adf2d6-ee62-4343-baed-c1d2256e32f0" InformativeScreenshot="811aac36892a59e6a1926211dddbc565.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvTextArea="298, 416, 159, 22" CvTextArgument="isagoturanin VOEN-i" CvType="Text" DesignTimeRectangle="300, 416, 158, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='İşəgötürənin VÖEN-i' check:innerText='İşəgötürənin VÖEN-i' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">voen["Voen"].ToString()</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Müqavilələri gətir'" sap:VirtualizedContainerService.HintSize="641.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="1456, 555, 170, 49" CvTextArea="1474, 571, 132, 20" CvTextArgument="Muqavilalari gatir" CvType="Button" DesignTimeRectangle="1459, 558, 166, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='appForm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appForm' tag='BUTTON' type='button' class='btn btn-primary btn-block' aaname='                     Müqavilələri gətir                 ' check:innerText='Müqavilələri gətir' /&gt;" Guid="1d24bbbb-b5bb-4682-8702-a9676525605d" ImageBase64="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" InformativeScreenshot="0c729f7d8ec29a03adb4d674d28a4455.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <ui:UiElementExists DisplayName="Element Exists 'voen not found pop-up'" sap:VirtualizedContainerService.HintSize="641.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                              <ui:UiElementExists.Exists>
+                                <OutArgument x:TypeArguments="x:Boolean">
+                                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">voenNotFound</CSharpReference>
+                                </OutArgument>
+                              </ui:UiElementExists.Exists>
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43470393-3358-4936-b0d4-654b46d095fc" InformativeScreenshot="87e4234deca6341a0623dd11dfa2c745" Selector="&lt;webctrl aria-role='dialog' tag='DIV' /&gt;" TimeoutMS="1000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If sap:VirtualizedContainerService.HintSize="641.6,3154.4" sap2010:WorkflowViewState.IdRef="If_3">
+                              <If.Condition>
+                                <InArgument x:TypeArguments="x:Boolean">
+                                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">!voenNotFound</CSharpValue>
+                                </InArgument>
+                              </If.Condition>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,2858.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Boolean" Name="IsSignErr" />
+                                    <Variable x:TypeArguments="x:Boolean" Name="magusErr" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İşçiləri gətir'" sap:VirtualizedContainerService.HintSize="545.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="297, 805, 162, 43" CvTextArea="313, 816, 82, 21" CvTextArgument="Iscilari getir" CvType="Button" DesignTimeRectangle="300, 808, 157, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='İşçiləri gətir' parentid='employeeListBlock' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='İşçiləri gətir' parentid='employeeListBlock' tag='BUTTON' type='button' class='btn btn-sm btn-labeled btn-labeled-right btn-primary' check:innerText='İşçiləri gətir' /&gt;" Guid="4c24247c-7c5f-46fc-8fc6-d1bd26162f83" ImageBase64="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" InformativeScreenshot="7b7e8d804a4336fbab180919d6095652.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <ui:UiElementExists DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="545.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                    <ui:UiElementExists.Exists>
+                                      <OutArgument x:TypeArguments="x:Boolean">
+                                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">IsSignErr</CSharpReference>
+                                      </OutArgument>
+                                    </ui:UiElementExists.Exists>
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="396a3303-ebc5-44a7-9531-14a980937cae" InformativeScreenshot="b1e495e7bdee8307c615f7ab2712e46a" Selector="&lt;webctrl class='font-weight-bold' tag='H5' /&gt;" TimeoutMS="3000" WaitForReady="NONE" />
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <ui:UiElementExists DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="545.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                                    <ui:UiElementExists.Exists>
+                                      <OutArgument x:TypeArguments="x:Boolean">
+                                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">magusErr</CSharpReference>
+                                      </OutArgument>
+                                    </ui:UiElementExists.Exists>
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bccd84ce-fdc6-4bee-b402-2ad292549227" InformativeScreenshot="67649940a5a623d450012e9d14576258" Selector="&lt;webctrl class='swal-title' tag='DIV' /&gt;" TimeoutMS="2000">
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <If sap:VirtualizedContainerService.HintSize="545.6,2280" sap2010:WorkflowViewState.IdRef="If_4">
+                                    <If.Condition>
+                                      <InArgument x:TypeArguments="x:Boolean">
+                                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">IsSignErr || magusErr</CSharpValue>
+                                      </InArgument>
+                                    </If.Condition>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,1984" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="x:Boolean" Name="infoNotFound" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="449.6,472" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                                          <ui:InterruptibleDoWhile.Body>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,317.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="disabled" DisplayName="Get Attribute 'Bütün işçiləri seç'" sap:VirtualizedContainerService.HintSize="353.6,231.2" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_5" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                                <uix:NGetAttributeGeneric.Result>
+                                                  <OutArgument x:TypeArguments="x:Boolean">
+                                                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">isChooseButtonDisable</CSharpReference>
+                                                  </OutArgument>
+                                                </uix:NGetAttributeGeneric.Result>
+                                                <uix:NGetAttributeGeneric.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="459, 485, 198, 42" CvTextArea="475, 498, 119, 18" CvTextArgument="Butun iscilari sec" CvType="Button" DesignTimeRectangle="462, 487, 194, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Bütün işçiləri seç' parentid='employeeListBlock' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Bütün işçiləri seç' parentid='employeeListBlock' tag='BUTTON' type='button' class='btn btn-sm btn-labeled btn-labeled-right btn-primary' check:innerText='Bütün işçiləri seç' /&gt;" Guid="64d3acd5-2817-414a-9992-be19f7b41f1c" ImageBase64="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" InformativeScreenshot="8c164f94e53648325081342b2618e189.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive" />
+                                                </uix:NGetAttributeGeneric.Target>
+                                              </uix:NGetAttributeGeneric>
+                                            </Sequence>
+                                          </ui:InterruptibleDoWhile.Body>
+                                          <ui:InterruptibleDoWhile.Condition>
+                                            <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">isChooseButtonDisable</CSharpValue>
+                                          </ui:InterruptibleDoWhile.Condition>
+                                        </ui:InterruptibleDoWhile>
+                                        <ui:UiElementExists DisplayName="Element Exists 'DIV'" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                                          <ui:UiElementExists.Exists>
+                                            <OutArgument x:TypeArguments="x:Boolean">
+                                              <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">infoNotFound</CSharpReference>
+                                            </OutArgument>
+                                          </ui:UiElementExists.Exists>
+                                          <ui:UiElementExists.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="34fd8d93-d866-4b0b-a339-c05a387e357a" InformativeScreenshot="2b4b5b8586fea5758cffa32a669b136f" Selector="&lt;webctrl class='swal-title' tag='DIV' /&gt;" TimeoutMS="4000" WaitForReady="COMPLETE" />
+                                          </ui:UiElementExists.Target>
+                                        </ui:UiElementExists>
+                                        <If sap:VirtualizedContainerService.HintSize="449.6,1278.4" sap2010:WorkflowViewState.IdRef="If_5">
+                                          <If.Condition>
+                                            <InArgument x:TypeArguments="x:Boolean">
+                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">infoNotFound</CSharpValue>
+                                            </InArgument>
+                                          </If.Condition>
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_2" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,982.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bütün işçiləri seç'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvTextArea="476, 536, 118, 18" CvTextArgument="Butun iscilari sec" CvType="Text" DesignTimeRectangle="462, 525, 194, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Bütün işçiləri seç' parentid='employeeListBlock' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Bütün işçiləri seç' parentid='employeeListBlock' tag='BUTTON' type='button' class='btn btn-sm btn-labeled btn-labeled-right btn-primary' check:innerText='Bütün işçiləri seç' /&gt;" Guid="2a2c136b-c41f-4048-b4ef-f1677a308d36" ImageBase64="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" InformativeScreenshot="43a6d9bc78f1b1dfd8e364ac86fb6c26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İrəli'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvTextArea="1439, 841, 27, 18" CvTextArgument="irali" CvType="Text" DesignTimeRectangle="1426, 833, 104, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnNext' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='      İrəli ' check:innerText='İrəli' /&gt;" Guid="4cd0b06d-cc5c-454f-b714-386052c2ff14" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAArCAYAAACdO20ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMPSURBVHhe7dzfS1NhHMfx/qPqajf9uKjYpewm6KYfIEKNSG8MhXbhZbWLkPCimAjtplE0xEgmyBFctSVsY5BDxgnHYMIQOnPCgeDTeaaT7TlfZep5PN/DngMvaDun5T5vZqcLu9Rut6EFhw7GlGVZHfLzR8HKvysYHZ9EKDwylC5fu8XO1ZthPIiOd9q4gg1zLIEajIXrt3H/yTN3MOpNDBNyLCbEJ00Hk1BDcXHlxh0dTEYNxYkOJqFG4kQHk1AjcaKDSaiRONHBJNRInOhgEmokTnQwCTUSJwqCzWJ+xUDq3QviHH/USJwoCJaBCcAqJIhz/FEjcaIgWLBRI3GiIFgc6XINqwvUuUElkG8B5vLB49jXTZhmFnOu67xHjeSdaXz+00J1aZo4NxgFwfrHPpv+13j1vQF7v4qU6zrvUSN5Q8Synb8sxGGfOVoggl0kaqTz643VPVr4+Za69mTKgz1fLMJc/4DI7BLy5i6sbQOx8BhiSQP5Sg3N1h7q5iZWk3FEjnmN0EIWZjnj/L7ueXWokc6HisX5E7ZcA/b30PzbQGnNwLfFBKKpKmx7F5VcBvOJj0jnarD+Ac1c986SeI1WEW+O/gx1qJHOzttYwsUEwy7W473XjCHyqPfxCCJfqs51NaQ7zwctGHUz4X0s4WKCDTS2+PebjVJS/DpIwXrDdIOoiSX4Euzgrs92EUfl02CvoQo10kniG84X2nfYsFpqYgm+BIuuNYBGFtGe50JTWdTFt86X4nFQP2HU4V0swZdgoSnDibOH0sLE4XMzSG87b7puHEYMUjDhuGjexhL8CeaYSBVRF+/Rdr4dOneIduMX5p52zwctmCBH8z6WoCDY6UQmZxCV7hj9RI00uG40NbEE34NxQ410Oq8x+15NLEEHk1AjcaKDSaiRONHBJNRInOhgEmokTnQwCTUSJzqYhBqJEx1MQo3EiQ4moUbiRAeTUCNxooNJqJG4IH+gT/+MMz0WB/dGH7uD6f9FgB7Lb3cfjuFHfsMdbNgVCgV2tra2sLOz0/d16mCB0sZ/p44SmAfax14AAAAASUVORK5CYII=" InformativeScreenshot="4d0b3cec54e62e906c00a3b21ab01002.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvElementArea="1424, 831, 107, 42" CvType="InputBox" DesignTimeRectangle="1442, 843, 24, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btnNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnNext' tag='SPAN' type='' class='' aaname='İrəli' check:innerText='İrəli' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DelayBefore="6" DisplayName="Click 'Sənədin qeydiyyatı'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvTextArea="1325, 846, 134, 18" CvTextArgument="Senedin qeydiyyati" CvType="Text" DesignTimeRectangle="1312, 834, 210, 39" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnRegister' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnRegister' tag='BUTTON' type='button' class='btn btn-primary btn-sm btn-labeled btn-labeled-right' aaname='      Sənədin qeydiyyatı ' check:innerText='Sənədin qeydiyyatı' /&gt;" Guid="6e6dcdf5-d254-417f-9c73-1917a6848d7b" ImageBase64="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" InformativeScreenshot="0febad3895e4b33373cc34b326107fca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V3" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvElementArea="1309, 833, 214, 43" CvType="InputBox" DesignTimeRectangle="1328, 844, 131, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='btnRegister' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnRegister' tag='SPAN' type='' class='' aaname='Sənədin qeydiyyatı' check:innerText='Sənədin qeydiyyatı' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bağla'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7efd8bf6-6981-4b01-8cdc-8a4e19c06215" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" CvElementArea="1159, 723, 76, 42" CvTextArea="1175, 736, 43, 18" CvTextArgument="Bagla" CvType="Button" DesignTimeRectangle="1162, 723, 72, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Bağla' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bağla' tag='BUTTON' type='' class='swal-button swal-button--confirm btn btn-sm btn-primary swal-button--danger' check:innerText='Bağla' /&gt;" Guid="32554ce9-764a-4c00-8bfc-bd6b3130b292" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAYAAADPY15xAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOdSURBVGhD7Zr7SxRRFMf7nyL6qV8iiECIgn4sCqR3iIb4ytDykYj5yIQlsywTtDQ1HyWWmKmZrJlSaLquj/WxurY+130oJ79XZpgZZ5a9W7usci98fti5Z+7ufPacc+8Pc4jE4BpCGOcQwjiHEMY5mDCLdZIuxyXR0ZOnBRrgBX6kwYTh4pETUXT4+CmBBniBH2kwYTCpFyzYBX6kIYQFgBDGiRDGiRDGiRDGiRDGiRDGiRDGiRDGiRDGiRDGSUiEZRcU06+RUfptGVfR02em1Oxc3Xv8UVFdSyNjFjp36QodizpL3/oHqKP7qzyPNZ3LK/TkRaXqvlAQEmH44Wvr69T+pZuaWj8yWtraaWJqmjZcLio0PdW9zwiIgjC320ObbjfNzM3TrcRUef5ACMMDaLPp4o1Ymp23s0xTXg+UmOS7FJ+WwbJMef3ACsODWienqNf8Xb52M+EOmQcGaemPk34Oj1DeY9POfD+ZnlcEHKMn7F5uAYvFPbg382ERmX8MsXYhxQRD2IRB1uv6RlpdWydT+e6Dpufm08rqKtlm56i2sYXaOjrZA7o2N6mu+T2Lycp/tBOzpopZcDhUMVphWB/lOzpupaq3DdTV20dLTidtbLj+OQtDJszr9bFFlcPj9VJ9S6tcUsg0lChKVboXDd7n88ky+geH9sQUlz4jj8ejKwxrW6wTNDw6pird1vbP7PsjVpg2w67eTqQ3DU0sw+qbP9CZC9E0ZZtRlSdISM9iWQcZ56/FsAavjbken0yLjiVdYbEpaSybpDkJbDT47n0jTAIPDwkZeYVkX1j0K8NIGOTbFx26wlIyc9gOrRWG8l9eUfe5YAi7sI6uHiYqOiae9Rht6eQUlaj6E0pyemaWHS2kGH8liXWxfmdPrxwPXlbXsCPJvhEGKdjV8O9Lx4qqundMDjYDzKNP4YC7vb0ty5CaPvoSRKGskXX+mj4OtfiekrJy9jkuNZ3m7QuR3cP0mj7+YciSsgWSmts+sWzB2NraYqd47ILKksIRAZkICTj8Yn2jksRnrI9jB9bDwPo4RCtjgiUkwoIBpaQsTX9oe5gRWA/r6s0FS8QIMwK7KTYIpcyyV1Us21CiythwEPHCcMpH/0E5T07bWENHqaG0A83I/0nECwMQk3T/AVXvbBKVNXWsJPXiwsG+EBZJCGGcCGGcCGGcCGGcCGGcCGGcCGGc7BEm3nE1RvcdV/EWtTHwsuctajECHUR/Aa9P7hSVI5h9AAAAAElFTkSuQmCC" InformativeScreenshot="e1a873af0696c70c5e1c653e3c765780.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" SearchSteps="Selector, Image, CV" Version="V3" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="353.6,105.6" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" Version="V3" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_3" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </TryCatch.Try>
+                        <TryCatch.Catches>
+                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="707.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ActivityAction x:TypeArguments="s:Exception">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                              </ActivityAction.Argument>
+                              <ui:Continue sap:VirtualizedContainerService.HintSize="334.4,24.8" sap2010:WorkflowViewState.IdRef="Continue_4" />
+                            </ActivityAction>
+                          </Catch>
+                        </TryCatch.Catches>
+                      </TryCatch>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <ui:ForEachRow.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">dt_voens</CSharpValue>
+                  </InArgument>
+                </ui:ForEachRow.DataTable>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAABpCAYAAAC3WERGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAuIgAALiIBquLdkgAAE9BJREFUeF7tXQeUHNWVLTI20SIIfGzWBKc1NtgLmGPvejHCYLMimKA4QprY013VaXp6NHm66ld1qNA9SdlCBrGSjuy1sAKjQBwJFBBiQQRh2RgOLKwXYzB7bGxA1L5X/Xumu7p6OtVIWk3fc+6Ruuq9XzW3fr//fqpm/r+jrlP8Tn0b6XAJyin0UAXjgXlC5ESvoHRxoqoHlAXv08MVjAd8RJ3pJMpBr5TQPVJcd4va4/RUBXaiJtp79TxR2RoQ47oXyIkaio3cSU0qsAN3O7znzWnuWNgS7df9UKPThE7xFWpaQbloJLEmf6T/PV+kd0Rojqi6P9qne+GYW1R2sYJ6HTWvoFQ4WvnbPOG+/R5JS8XpJOH/3khCd/ZE3m7sjjRS8wpKxZ11zitaEos3oLAjIlN6IG7jAwioS+SpVQ2nU5cKSgErymdDrY2zvKx7w4lMsY1antC5cHxdQ1vXN6hLBaXCxatOt6j+AWOyEashRifFxhoNjSTRnme7pFupeQWlwiUpN7qJuiejNgONRjHWr/uife+7hJifmldQKvzRhZexocgqjNMYKkbEBqE94V69WV2oz/G3Lp7tDk6mLhWUgprWnpOrvK2CPzbwcTKlG63V2CB6QWxXd+SRZmXgu9SlMKzZ/n1mwZMn008VINxEmeMJJ14LKIMQMhRDZAwdGLPxGAtddXe4byY1Lwy/Gr6a2fTUXmbbnv9iduw9gR6d2HAQ5fsuQXnca6R5yVQPOzBeYBNkI46eyIc1LT0dDlEpXLBfP3Y+s2rzQuahXTqz7Rmd2fz0Lnpm4uIOonyhlsjL/TTTGA0dKHZcd0Gqx0X7Vsz2Nl9EXQrD5j0+ZvPu95jhF3Vmy9Mg9h7kDnp24uGOuQ3HN3aHO3xS4kOMyymhRxnXm8T48Ewh+i/UpTAM77+FGdr5HLNlb7rQE1vw+u7wNLegvpKqySmRPeFkLfeJ8TfqhGg1NS8MS9f8I7Nyw38wj+0HoUHsTKFTnFiCVwuR7/hEbQh7hL5IX1ptBuIxyD4coWjEGYp8lrrkx9DTpzEbd8aYx5/XmUf+UzfitbXYyIkh+J18+NwA0QaxETSHD/zcJBoTBL+4u477KnUpDOufqIfa/BazxVLcUQ7thkZzHzyQZ1+jnscunPKA2yGq7xqNYobQmo7HnKK6b7og30zNC8OGJ65nNu99itmaM3RkEu027tSZ9TtUWsKxh3t87T+uaeP3BaN9hrDpkwEYp1mivttIVA81LwyxRZcyTx1clazRWQ2iNbHhHH5pN7Po/htoKccWOKnv604h9suAskD3R/tHBpg4QTE6Lj54ANCh6XWGYpOoS35s2H0Ks25YYDbsOJTMpy2ENdPIUvb+N7Nh+NgcC3d1S6c7O8UYjnGk59NGjYaOC3TT9epg94baNv5K6lIYhnbOgRj8GvPwsxiD8zWKyRq9FR7K+mGN2bj9LFrKsQWosTPcUvwtFNstpoZMgSA8is8J8ovN6pLbqHlh2PTU95ihXY8mRTSJaqbRKILIwy9ArN61HuL7t2gpxybcJJ41dGqILWofcOF4kJoVhsdf+DzU6mWGkLnz6TRCjcYMZN3j+5klq2+npRzbcBPtV+lieyTtI5Zoy1zt5EJqkh9rNp3CLF4bZB597oPCsg8QGh/I0K73ma17mmgpEwNZgovaAD1VOLY9s5J5AkLCUJ4YjTEc7R6GWv3QrgXMpu3n0xImDsyCw+dueqpwbH562FLgdGLNx97kmi1bmF9uvYp6TjxYCB6lpwrH5j0bsgROERtNzD4e2nmQ2f7KDOoxcTGugiczlL8xW57pYlZvzDsWzgnx0xpD0e86+ehP3WLcAffDNROtdgaJ3jSHVy6lZgXBJapnAj8HPDsfWaCXV8+6h4+dRN3HD7YKjike1uZUhvLQ7vuYNTv/gVrlRE2PNNVN1HVw/XeS4zWjfQHs5frgM05mwL3tdUlah78zdC51tQTYnQi+LwL/DHy/QL7HitpbkKEdYAX5Qej0ddbzkctpkfbBJsEhf8baDIJjg7j16SeZzTt+SM/mBFzvcyxRNhkrZNNENhPHblJjOTghHSTqu3f3xOppMVmggv8lvYxCOHoN7IMkjJ42KygJWqw9sEnw7UajuOPAW0z/ypxCpKOaD5/VJCVeG0vonMQHBB01jo9JtLgMUMHfyPIrknhvPqlXdxJ1JS26fJQt+OY9x0OWspXZ9OQK5smXT6NH88JJlGGchsu4dhbHrvW+SFx3dqpTaJEjsEvwFFugxk/rjmZdpySULfgQCD60u6hxD7egTfXhVzb9upSjYzkqxGB1P/B/zTYpeiVNdwrqdlrsCEoTPPfDRcFni8pGWnx5KFvwEjCPyNuDI8KOEr/CXkHdygnySGPljSTOmZ9YGsIRTBy1NPu4JfUTToqdTc0N5BH8BU5UrgNeb5BoU6DBnsERRYZzfzLZGnQBA6L2QVdILX+P0eEWvF6InJecPUq7JhDDi1NUf0/NslDlafm5Xx7I8EHiQ3KQ2LXUzEAewR+hZllwCOHJLJHfNLcreK94fzNJ9JvUtHSMp+B17ZLo6JJq6UcDbqLcbBYbSSc2mqlZFm6cNvvKYGJxlh/SSWL/Rs0M5BH8SWpmCZZXqnHwzuyH91xP5IzrlITxELylK3wNy8e24zi6L9rfRQ8bYEnMax5zR+JONa+YuJ6aZaFWiJwLKdrHVr4eUc0YPi5HcI6PXJS0y74O9AXmUrPSYafgVT3KZ6qIEg9Ag5hWSxz0tAFoBMWM640wrtd3k5wTHHBfk8AuR26tZCxzLkdwtyifDDZ/NPmkyFKz0mGX4JygTveR+OsWG6Kc1MQAfI6nnRshxs3qzq6cMdJDtPPA7q9mvyTtExwBNr8x+SRJtPKHku0QHHLqm9EXt4pklJVkQYJjSPGQeEbjlw64r/Ot/JJU7qRmBmwQHIcFrHxztjEFww7BQaiqjDIymSG4i1d7rB6MD+J9fbBzNjXLAtzXuWD3HvDvwL+l8SMQfCo1M2CD4C+YfFIMUJPSYYfgkMvelVFGJjMEn9+3vBYFT60ISNEHKV9jW2gtNcsCK2jHw3UuhPv7AvDzafyii4+dSs0MwLFyBX/J5JOij5qUDri5wyr4jdNmfRszjexNVXG9fXDFp1dfN6XsWSAbBD9g8kmx/GUbh1vwKbdMP84rJYzNVWZbSCH1mpauB6lpyShHcF+07ziwedXkYxCSgSpqVjoOt+AITogNchZ5Lnbdm9UFul8ZuIOaloRyBK9u7vwM2PyPVb7vCsk/pmal40gIzgqxL1v15gxCfG8Vew/d1RP+IjUvGuUIfu2Un0yGXuUhXGWW4YcNPa+Wv3/0SAiO8MsL1hqimxpPJHajoYb9PhBfeCI1LwrlCA693WstfCBl1f7sFo6SwauSBG/gzmkRtU9Zc+MJNKbVoLcaWrDiCWpeFPII/ig1s4Sblx/A5X3pPrh3CfoaD1OT8nCkBEfcvvjeqnD/vRAbY1Z++vzEEn1WU9svqHnByCP4s3D+G8BvUl7ukRJXNHaQm5xd0uLkcr/McIdzqg0kltG5KhlwwSMmOKLO6V8ejFuPArK4ahcyl47BFcuoeUGAv2EswS2Jc5hGzTa3LfAZ+gxDtOjycaQFR/DLVz9hlRWkmBQiUfBkbimCm/gpEkLbm35Ri9Ni7cHRILi8esMJbQP3Ph+AlJAVZKsyjJrmVQYJdRkT5QiOD57jYwcgBQx6Bc3+dSpHg+CIOb62MyBjOdiuLdJdVlNpQL88qNcG2znqkhPlCG6QqH+HMPKqT9S2TZeUvNcrCkeL4IhzJl8wyRPufbVHXWjMI1qUZeyg85D4mK/5KFZwzIq8kJ4GsGxjlwfd+QEMhHG4ufexBrffnm3nR5PgiDM93kncwM9+1yrh+68scnQMLeFefZ4Q+Qp1yUIewZ9hQ8pFwIuBl0LouITtiV1cK8Wvmd4ptHKd4ide07ZIfB0UhJlFtPjyYBYcnm6MnioYdgqOuEQUz+vgY2/i3k+L8pKii4k36kPkOOqSgTEFl7THqJkl5tQ47wkmlmb5YcPtCKljLrErCJB3rk0vGL5GRbfKdguOcLR1Xtgk9r6TY1LDSOM4Iv+MmmcgTw0vZLQwa4oN78PFK8W9CcMKUNjPTYUvpacKxngIjuAHH/hK99KVH2P33zx+niSkkoKWNQ9aruAsUbZlpamYvQiK5dK6ogCF96YKxS5sI5GL7tmNl+CIf731ruuwobQazjVSOKJuo6YjKFdw+Hvut/BD3kdNSoeTxDpST9OoRVLx73gdT8ERvsjCYEDJXgSUoqtHzhhZLF9wddDCD7mempQOn9Q7N1UgTgCwodhv6amCMd6CI6CcPVndbiTEVg/JvEb5IUVVjeHYND9MET1jrNoqGHWdwg+MpV1wARTcxcsf3Xj7tKJa48MhePvgfVfhW+DwnYdZ1yCZ7U7ZggtqzNxYU8GHqUnpcPVIF4Dgh4xCiWIMi7KDy75HTxeEYgSHr+sNcAwXA3WkCH9IF7QfPT/t6BrzDW8183texu4/+GRS0jZTEwM2hJSouYZ3gi53E9meV4jUi+pvmmnBuGixVogWVSuLE1x7IMsGQwXkuayLy7kuBVEd7F7SrC3M8MX2Bxr+XdTEAPREy63hUXMNbwZdqkXVHsFdgrrGR+Oj0YASuajWuEjBsxcCUcGdrGfMvfyQrQjmwS2aqeyjJgbsiOE465Tuh0MNfrteGu8RVHeqQTL+AEF5nZ4qCEUKrmXZUMEbXa4rqJklHKFoh3l5BfYAOV62VXB4gAMWfkB1KzUpD45u8vVUoSh4QF2o3zmnpuAdXOUKjl9fvG5NS/eYLzZw8qMp7Igv7vUJxTLeng8dorIEB2HNncEUf01Nygc81d+l/pjWgeX6bXPrO+mpvChScMu1hTi1xUl911AzS0DNjWK2kOEHfQdPOJ6xHaTcGg7+xru90v3wul4SL7/jk4JLUJSU4LhmxB/pPUBP5UUxgsPnhOm8QRyoqu0Wp1EzS3CiusHYr5lGvGeOVxdQEwNlCw6+5hiOq4JrhFjRA3s50dqlXomFsngBo9YkdG+sr6A98cXV8BixXOyOMZyPrqNmWfhWSDgV/P6KE7ojfsnarfsi/Q3UzEAewcfMNKr8Tf/khf6I2Q9fRQWC2/uGompReWlksxN8pUDINfTUmChS8DmWPUYg1lZISy0nF5oFZT0+qPSQYjSYgqLPC3RcTM0M5BE85zIJdn7PZe6Q8rLl/cGxJqHX3pcyuATNEYCCR/8oyMlDfN7FlcUI7gqrF5gbviwK6oI6Ik918epUjleaIL7v84iZ2QneYxAad3e7kJGDI8YSHPzegdD07/DvauAa/BeOr3YLyna4r0PJNyOZfHAJXnzRH/39iy3H30vGLEE62Smpf0ltWMUxZ7cgL6enc6IYwREQttaOKTp8u1L3gDXLvKsMiTEWRzdn8NIPaLEjyFPDkyu70mgcx/uxuCfM+/llq/Rb59bztHh7Ab0s0Y9fVXpBFKZRiI/5st5iBb/HwZ7rjfZ9mLemj8EgPAToIVuuV8kneKHEdTHze5fqrb3L3pp0/uTx+R04X7N0epCoH3FUDG8YvlL82NNSxQqO8ET6rgLB/4Tzk5Yxcwzig2oR46toUVmwQ3BsH3CwLJhYfPDbN/zoElr0+OD6HrG9I20i1Q+hpZaEZ9HTWeBIvCb9ZtMJX9kOapYFV0iZ7OSj94PNp9heoJCWtV5I/l5EkzyoQ6/4jfrusOVDTAEEPymrjDxM+803owJA3H6xrX9Z5+xA6+H5hcPWtDXSGOcgXn7iCIUtG1BWVK6EhmgQ2G/iApao/0zNcsLdFf0S/JFulihrgHvhmlg7cV4R+aon1rezpqVn0exA2wx/pP9U6pYT0Ik7Hq4tAK3uKZOS2g9tRG9jKCo5BbkVhL6b7RTL33FcLGr58E/wqaPgSGygmkjiOXp6XAHXOglq6Rlw3TMge7A3Mzia4ZbUB73QsUiJjuQkLWfsrKBMNHSp0LvTPkgfG8ZhXB/R7H1LTgWjcPG9PwzIfRmNGf4f8tMINanAbviig12+KC68SVsbgg+AqMfuO72PNOa1dK5tSSwZFRxrOqRyLlFdQU0qsBsdA/fuSBfcIMT3YO+SbbdU1Z1JzSqwC9DFPQG6/M+aRcdfdq1vJ6852sTifu6rgvyAOI4bR/elC45jDtgTxLfqu0Jy+W9cqCATIDqOVTwWkAeyuuJGBkPUoXo+chk1r8AuVLeFViaHODNFp0OrH7vFeDs1rcAuNHSSVhzxM4uOn3E4ICAlDtzFR3K+B6WCEuAOKzdAY/qGWXRDeBC9GWJ7bUv33rmB+RXh7UKjED2NE5TlxiyRKa7jZC/+QizuQoMHcPAef1tHfQfJ+9blCgoA2xm+mRPk/RhORqbJMsTXdHzLJoShQ04+OuQLyexsQfkada+gVDSKqtdFlLdx67bxI0wWey9x+BcfDC7NcBL1eS9R760isqtGUG50C/KXOFE9Nn/LZ7xQFSKnz+sQgo3dkdfxZ3pHJmzTiHOnuLgntd4E13/46HH4jC8V+y20Dfsh1dxWFQqV9DqPCYfbahwnBuNLZnFEezgpNIqKIWdE2DFpNMaSqjtDocqPUBeLBj52uUdQW12iMuwStU8wizF3nsxEwSG8vF0XCo3/bzQcy5glxC7yC7GZLl7GnXQ4MPaHEaHTJnWp4DoIXqnhdoIlymdZQf4qhJyb2J5IHdsTbQbRw24S7+eIIjaEQpWfWa+gggoqqGAcwTD/B9R6Ae+8WuhdAAAAAElFTkSuQmCC" InformativeScreenshot="f0f8113826a41a3f477919186a5c3e17.jpg" Selector="&lt;html app='chrome.exe' title='Müqavilənin illik qoşmasına əlavənin hazırlanması' /&gt;" Title="Müqavilənin illik qoşmasına əlavənin hazırlanması" Url="https://eroom.isb.az/runApp?doc=project.AppClipAddendum" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
